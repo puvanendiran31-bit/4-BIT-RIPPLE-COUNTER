@@ -24,17 +24,36 @@ In timing diagram Q0 is changing as soon as the negative edge of clock pulse is 
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Code Overview: Understand the Verilog module ripple_counter, which includes clock (clk) and reset (rst) inputs, and a 4-bit output count. The counter increments on each positive clock edge unless reset is asserted, resetting the count to 0.
+
+2.Simulation Preparation: Use a Verilog simulator (e.g., ModelSim) and write a testbench module to apply clock and reset signals while monitoring the counter output.
+
+3.Testbench Implementation: Instantiate the ripple_counter module in the testbench, generate clock and reset signals, apply them to the counter module, and observe the count output.
+
+4.Simulation Execution: Compile both the counter module and the testbench, simulate the design, and verify that the counter counts from 0 to 15 (binary 1111) and resets to 0 when the reset signal is activated.
+
+5.Verification and Debugging: Analyze timing diagrams to ensure proper counter behavior, debug any encountered issues during simulation, and make necessary modifications to the design for optimal functionality.
+
+Program for 4 Bit Ripple Counter and verify its truth table in quartus using Verilog programming.
+
 
 **PROGRAM**
 
-/* Program for 4 Bit Ripple Counter and verify its truth table in quartus using Verilog programming.
+Developed By : Puvanendiran.T
 
- Developed by: RegisterNumber:
-*/
+Register Number : 25018470
+
+![image](https://github.com/Abishai95141/4-BIT-RIPPLE-COUNTER/assets/139335314/49c8a55a-5fd0-4834-9a4b-04ceccdc28e7)
+
 
 **RTL LOGIC FOR 4 Bit Ripple Counter**
 
+![image](https://github.com/Abishai95141/4-BIT-RIPPLE-COUNTER/assets/139335314/79bfe667-ccd2-41fb-879b-ff0b02a3f55b)
+
 **TIMING DIGRAMS FOR 4 Bit Ripple Counter**
 
+![image](https://github.com/Abishai95141/4-BIT-RIPPLE-COUNTER/assets/139335314/0fb2648e-6e6d-40b8-8fed-c9f94c2b9a5c)
+
 **RESULTS**
+
+Thus, program excueted successfully
